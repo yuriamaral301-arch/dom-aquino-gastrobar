@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom Aquino Hotel & Gastronomia | Ponta Negra - Natal/RN</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Conheça o Dom Aquino Hotel & Gastronomia em Ponta Negra, Natal/RN. Vista panorâmica para o Morro do Careca, piscina liberada para clientes, culinária potiguar com frutos do mar frescos e drinks tropicais à beira-mar.">
+  <meta name="keywords"
+    content="Dom Aquino Natal, restaurante Ponta Negra, Dom Aquino Gastrobar, hotel e gastronomia Natal RN, frutos do mar Ponta Negra, restaurante com piscina Natal, Morro do Careca Natal">
+  <meta name="author" content="Dom Aquino Hotel & Gastronomia">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://domaquino.com.br/">
+  <meta property="og:title" content="Dom Aquino Hotel & Gastronomia | Ponta Negra - Natal/RN">
+  <meta property="og:description"
+    content="Seu refúgio à beira-mar de Ponta Negra com piscina exclusiva, vista para o Morro do Careca e alta gastronomia potiguar.">
+  <meta property="og:image" content="images/drinks 2.jpeg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=20260923v7">
+
+  <!-- Critical Hero Styles (Guarantees Background Photo & Instant Contrast) -->
+  <style>
+    .hero-clean {
+      position: relative;
+      background-color: #0c1825 !important;
+      background-image: url('images/drinks%202.jpeg') !important;
+      background-size: cover !important;
+      background-position: center 25% !important;
+      background-repeat: no-repeat !important;
+      min-height: 82vh;
+      display: flex;
+      align-items: center;
+      padding: 70px 0 90px 0;
+      overflow: hidden;
+    }
+    .hero-bg-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(8,14,24,0.76) 0%, rgba(8,14,24,0.58) 40%, rgba(8,14,24,0.78) 80%, rgba(8,14,24,0.96) 100%);
+      z-index: 1;
+      pointer-events: none;
+    }
+    @media (min-width: 992px) {
+      .hero-clean {
+        background-position: right 25% !important;
+        min-height: 88vh;
+        padding: 95px 0 115px 0;
+      }
+      .hero-bg-overlay {
+        background: linear-gradient(90deg, rgba(8,14,24,0.92) 0%, rgba(8,14,24,0.80) 45%, rgba(8,14,24,0.35) 75%, rgba(8,14,24,0.15) 100%), linear-gradient(180deg, rgba(8,14,24,0.4) 0%, transparent 60%, rgba(8,14,24,0.85) 100%) !important;
+      }
+    }
+    .hero-clean-grid {
+      position: relative;
+      z-index: 3;
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+    @media (min-width: 992px) {
+      .hero-clean-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .hero-content {
+      max-width: 680px;
+    }
+    .hero-clean .hero-heading {
+      color: #ffffff !important;
+      text-shadow: 0 2px 16px rgba(0,0,0,0.6) !important;
+    }
+    .hero-clean .hero-heading em {
+      color: #ff8c42 !important;
+      text-shadow: 0 0 25px rgba(240,90,36,0.6) !important;
+    }
+    .hero-clean .hero-subtext {
+      color: rgba(255,255,255,0.95) !important;
+      text-shadow: 0 1px 10px rgba(0,0,0,0.6) !important;
+    }
+    .hero-clean .hero-subtext strong {
+      color: #ffffff !important;
+    }
+    .hero-clean .badge-clean {
+      background-color: rgba(255,255,255,0.14) !important;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.28) !important;
+      color: #ffffff !important;
+    }
+    .hero-clean .btn-primary {
+      background-color: var(--color-orange) !important;
+      color: #ffffff !important;
+      box-shadow: 0 10px 28px rgba(240,90,36,0.55), 0 2px 6px rgba(0,0,0,0.25) !important;
+    }
+    .hero-clean .btn-secondary {
+      background: rgba(255,255,255,0.16) !important;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1.5px solid rgba(255,255,255,0.4) !important;
+      color: #ffffff !important;
+    }
+    .hero-clean .btn-secondary .btn-svg-arrow {
+      stroke: #ffffff !important;
+    }
+    .hero-clean .highlight-item {
+      color: rgba(255,255,255,0.95) !important;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.5) !important;
+    }
+    .hero-clean .highlight-check {
+      background-color: rgba(240,90,36,0.35) !important;
+      border: 1.5px solid #ff8c42 !important;
+      color: #ff8c42 !important;
+    }
+  </style>
+
+  <!-- JSON-LD Local Business Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Dom Aquino Hotel & Gastronomia",
+    "image": "images/drinks 2.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Pastor Rodolfo Beuttenmuller, 9045 A",
+      "addressLocality": "Natal",
+      "addressRegion": "RN",
+      "postalCode": "59090-060",
+      "addressCountry": "BR"
+    },
+    "telephone": "+5584986312222",
+    "servesCuisine": ["Potiguar", "Frutos do Mar", "Brasileira", "Coquetelaria"],
+    "openingHours": "Mo-Su 11:00-23:00",
+    "sameAs": [
+      "https://www.instagram.com/domaquinonatalrn/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Top Site Loader Line -->
+  <div class="site-load-bar" id="site-load-bar"></div>
+
+  <!-- Top Informative Bar -->
+  <aside class="top-bar" aria-label="Informações Rápidas">
+    <div class="container top-bar-container">
+      <div class="top-info">
+        <span class="status-dot"></span>
+        <span>Aberto hoje das <strong>11h às 23h</strong> &bull; Ponta Negra, Natal/RN</span>
+      </div>
+      <div class="top-links">
+        <span class="top-tag">🏊 Piscina livre para clientes</span>
+        <a href="https://www.instagram.com/domaquinonatalrn/" target="_blank" rel="noopener noreferrer"
+          class="top-link">
+          Instagram: @domaquinonatalrn
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Clean Minimalist Header -->
+  <header class="site-header" id="navbar">
+    <div class="container header-container">
+      <a href="#inicio" class="brand" aria-label="Dom Aquino Hotel & Gastronomia">
+        <img src="images/logo.jpeg" alt="Logotipo Dom Aquino" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-title">DOM AQUINO</span>
+          <span class="brand-subtitle">HOTEL &bull; GASTRONOMIA</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Navegação Principal">
+        <ul class="nav-menu">
+          <li><a href="#o-local" class="nav-item">O Local</a></li>
+          <li><a href="#estrutura" class="nav-item">Estrutura &amp; Lazer</a></li>
+          <li><a href="#gastronomia" class="nav-item">Gastronomia</a></li>
+          <li><a href="#sobremesas" class="nav-item">Sobremesas</a></li>
+          <li><a href="#avaliacoes" class="nav-item">Depoimentos</a></li>
+          <li><a href="#informacoes" class="nav-item">Informações</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/5584986312222?text=Olá!%20Vim%20pelo%20site%20do%20Dom%20Aquino%20e%20gostaria%20de%20informações."
+          target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+          <span>Fale no WhatsApp</span>
+        </a>
+        <button class="menu-btn" id="menu-btn" aria-label="Abrir Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer" id="drawer">
+    <div class="drawer-top">
+      <div class="drawer-brand">
+        <img src="images/logo.jpeg" alt="Dom Aquino" class="drawer-logo">
+        <div>
+          <span class="drawer-name">DOM AQUINO</span>
+          <span class="drawer-role">HOTEL &amp; GASTRONOMIA</span>
+        </div>
+      </div>
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Fechar Menu">&times;</button>
+    </div>
+
+    <ul class="drawer-nav">
+      <li><a href="#inicio" class="drawer-nav-item">Início</a></li>
+      <li><a href="#o-local" class="drawer-nav-item">O Local &amp; Conceito</a></li>
+      <li><a href="#estrutura" class="drawer-nav-item">Estrutura &amp; Lazer</a></li>
+      <li><a href="#gastronomia" class="drawer-nav-item">Nossa Gastronomia</a></li>
+      <li><a href="#sobremesas" class="drawer-nav-item">Sobremesas da Casa</a></li>
+      <li><a href="#avaliacoes" class="drawer-nav-item">O Que Dizem Nossos Clientes</a></li>
+      <li><a href="#informacoes" class="drawer-nav-item">Horários &amp; Como Chegar</a></li>
+      <li><a href="#contato" class="drawer-nav-item">Reservas &amp; Contato</a></li>
+    </ul>
+
+    <div class="drawer-bottom">
+      <a href="https://wa.me/5584986312222?text=Olá!%20Gostaria%20de%20informações%20sobre%20o%20Dom%20Aquino."
+        target="_blank" rel="noopener noreferrer" class="btn btn-primary w-100">
+        <span>Conversar no WhatsApp</span>
+      </a>
+      <p class="drawer-contact-note">📱 (84) 98631-2222 &bull; Ponta Negra, Natal/RN</p>
+    </div>
+  </div>
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+
+  <main>
+    <!-- HERO SECTION (LUXURY RESORT HERO WITH BACKGROUND PHOTO) -->
+    <section class="hero-clean" id="inicio" style="background-image: url('images/drinks%202.jpeg'); background-size: cover; background-position: center center; background-repeat: no-repeat; background-color: #0c1825;">
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-clean-grid">
+        <div class="hero-content">
+          <div class="badge-clean hero-anim hero-anim-badge">
+            <span class="badge-icon">🌊</span>
+            <span>Beira-Mar de Ponta Negra &bull; Natal / RN</span>
+          </div>
+
+          <h1 class="hero-heading hero-anim hero-anim-title">
+            O Seu Refúgio de <em>Sol, Gastronomia</em> e Lazer em Natal.
+          </h1>
+
+          <p class="hero-subtext hero-anim hero-anim-text">
+            Um ambiente acolhedor e pé na areia com <strong>piscina liberada para clientes</strong>, vista panorâmica
+            privilegiada para o <strong>Morro do Careca</strong>, frutos do mar frescos e coquetelaria autoral.
+          </p>
+
+          <div class="hero-cta-group hero-anim hero-anim-cta">
+            <a href="https://wa.me/5584986312222?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20uma%20reserva%20ou%20tirar%20dúvidas%20sobre%20o%20Dom%20Aquino."
+              target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+              <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+              </svg>
+              <span>Falar com a Recepção no WhatsApp</span>
+            </a>
+            <a href="#o-local" class="btn btn-secondary btn-lg">
+              <span>Conhecer o Espaço</span>
+              <svg class="btn-svg-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Clean Info Badges -->
+          <div class="hero-highlights hero-anim hero-anim-highlights">
+            <div class="highlight-item">
+              <span class="highlight-check">✓</span>
+              <span>Piscina exclusiva liberada</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-check">✓</span>
+              <span>Vista para o Morro do Careca</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-check">✓</span>
+              <span>Aberto diariamente (11h às 23h)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bottom-fade"></div>
+    </section>
+
+    <!-- SECTION: O LOCAL & CONCEITO -->
+    <section class="section section-about" id="o-local">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text-col reveal-item">
+            <span class="section-kicker">O LOCAL &bull; CONCEITO</span>
+            <h2 class="section-headline">
+              Mais Que um Restaurante.<br>Um <em>Ponto de Encontro</em> em Ponta Negra.
+            </h2>
+            <p class="paragraph-lead">
+              O <strong>Dom Aquino Hotel &amp; Gastronomia</strong> nasceu para oferecer o equilíbrio perfeito entre o
+              ritmo relaxante das férias e a excelência da gastronomia potiguar.
+            </p>
+            <p class="paragraph-body">
+              Localizado na Praia de Ponta Negra, nosso espaço é arejado, seguro e banhado pela brisa do Atlântico.
+              Aqui, famílias, casais e viajantes desfrutam de um almoço tranquilo, descansam à beira da piscina e
+              contemplam o pôr do sol mais bonito de Natal brindando com drinks autorais.
+            </p>
+
+            <div class="stats-row">
+              <div class="stat-card">
+                <span class="stat-num" data-target="100" data-suffix="%">100%</span>
+                <span class="stat-label">Pé na areia em Ponta Negra</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num" data-target="7" data-suffix=" dias">7 dias</span>
+                <span class="stat-label">Aberto ininterruptamente</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num" data-target="4.8" data-suffix="★" data-decimals="1">4.8★</span>
+                <span class="stat-label">Aprovado pelos visitantes</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-features-col reveal-item reveal-delay-1">
+            <div class="feature-box">
+              <div class="feature-icon-box">🏖️</div>
+              <div>
+                <h3 class="feature-box-title">Localização Privilegiada</h3>
+                <p class="feature-box-desc">Situado a poucos passos da praia de Ponta Negra, com acesso fácil e vista
+                  direta para o Morro do Careca.</p>
+              </div>
+            </div>
+
+            <div class="feature-box">
+              <div class="feature-icon-box">🏊</div>
+              <div>
+                <h3 class="feature-box-title">Lazer para Nossos Clientes</h3>
+                <p class="feature-box-desc">A piscina do complexo está à sua disposição. Venha almoçar, dê um mergulho e
+                  relaxe nas espreguiçadeiras.</p>
+              </div>
+            </div>
+
+            <div class="feature-box">
+              <div class="feature-icon-box">🦐</div>
+              <div>
+                <h3 class="feature-box-title">Gastronomia Regional Autoral</h3>
+                <p class="feature-box-desc">Pratos fartos e selecionados de camarão, polvo grelhado, peixes frescos e o
+                  melhor da tradição do sertão potiguar.</p>
+              </div>
+            </div>
+
+            <div class="feature-box">
+              <div class="feature-icon-box">🥂</div>
+              <div>
+                <h3 class="feature-box-title">Eventos &amp; Comemorações</h3>
+                <p class="feature-box-desc">Espaço preparado para receber celebrações de aniversário, encontros em
+                  família e mini-weddings com vista para o mar.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: ESTRUTURA & LAZER -->
+    <section class="section section-structure" id="estrutura">
+      <div class="container">
+        <div class="section-intro text-center reveal-item">
+          <span class="section-kicker">ESTRUTURA COMPLETA</span>
+          <h2 class="section-headline">Desacelere o Tempo à Beira-Mar</h2>
+          <p class="section-subtext">
+            Preparamos cada detalhe para você passar o dia inteiro com total conforto, hospitalidade e bem-estar.
+          </p>
+        </div>
+
+        <div class="mobile-carousel" data-carousel>
+          <div class="structure-cards-grid mobile-carousel-track">
+            <!-- Card 1 -->
+            <div class="clean-card reveal-item">
+              <div class="card-visual">
+                <img src="images/foto drinks.jpeg" alt="Coquetelaria tropical e vista do mar no Dom Aquino"
+                  class="clean-card-img clean-card-img--drink" loading="lazy">
+                <span class="visual-badge">Deck &amp; Coquetelaria</span>
+              </div>
+              <div class="clean-card-body">
+                <h3 class="clean-card-title">Sunset no Deck</h3>
+                <p class="clean-card-text">
+                  O fim de tarde no Dom Aquino é um espetáculo à parte. Saboreie coquetéis clássicos e autorais enquanto o
+                  sol se põe no horizonte do mar potiguar.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="clean-card reveal-item reveal-delay-1">
+              <div class="card-visual">
+                <img src="images/drinks 2.jpeg" alt="Mesa com camarão e vista para a praia de Ponta Negra"
+                  class="clean-card-img" loading="lazy">
+                <span class="visual-badge">Piscina &amp; Lazer</span>
+              </div>
+              <div class="clean-card-body">
+                <h3 class="clean-card-title">Piscina Liberada</h3>
+                <p class="clean-card-text">
+                  Nossos clientes têm acesso livre à piscina com deck. Relaxe na água morna sob o sol de Natal enquanto
+                  seus pedidos são servidos na mesa.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="clean-card reveal-item reveal-delay-2">
+              <div class="card-visual">
+                <img src="images/sobremesa (4).jpeg" alt="Gastronomia à beira-mar com vista para o mar de Ponta Negra"
+                  class="clean-card-img" loading="lazy">
+                <span class="visual-badge">Vista Panorâmica</span>
+              </div>
+              <div class="clean-card-body">
+                <h3 class="clean-card-title">Vista do Morro do Careca</h3>
+                <p class="clean-card-text">
+                  Desfrute de uma das vistas mais disputadas de Natal. O cenário natural perfeito para fotos inesquecíveis
+                  e momentos de puro descanso.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Carousel Navigation Controls -->
+          <div class="carousel-nav" aria-label="Navegação de Estrutura">
+            <button class="carousel-btn carousel-btn--prev" aria-label="Opção anterior">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <div class="carousel-indicators">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+            </div>
+            <button class="carousel-btn carousel-btn--next" aria-label="Próxima opção">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: GASTRONOMIA AUTORAL (INSTITUCIONAL - SEM PREÇOS/SEM CARDÁPIO COMERCIAL) -->
+    <section class="section section-gastronomy" id="gastronomia">
+      <div class="container">
+        <div class="section-intro text-center reveal-item">
+          <span class="section-kicker">NOSSA CULINÁRIA</span>
+          <h2 class="section-headline">A Fusão Entre o Mar e o Sertão Potiguar</h2>
+          <p class="section-subtext">
+            Ingredientes frescos e pratos generosos preparados com consultoria de chef para encantar o seu paladar.
+          </p>
+        </div>
+
+        <div class="mobile-carousel" data-carousel>
+          <div class="dishes-showcase-grid mobile-carousel-track">
+            <!-- Dish 1: Prato Mar & Sertão -->
+            <div class="dish-showcase-card reveal-item">
+              <div class="dish-photo-wrap">
+                <img src="images/pratos 2.jpeg"
+                  alt="Prato Mar &amp; Sertão com risoto de camarão gratinado, carne de sol e macaxeira frita"
+                  class="dish-photo" loading="lazy">
+                <span class="dish-photo-badge">Especialidade da Casa</span>
+              </div>
+              <div class="dish-content">
+                <h3 class="dish-name">Prato Mar &amp; Sertão</h3>
+                <p class="dish-summary">
+                  A união autêntica dos maiores sabores do Rio Grande do Norte: risoto cremoso gratinado com camarões
+                  selecionados, carne de sol artesanal desfiada na manteiga da terra e macaxeira frita dourada e crocante.
+                </p>
+                <div class="dish-tags">
+                  <span class="tag-pill">Serve 2 a 3 pessoas</span>
+                  <span class="tag-pill">Tradição Potiguar</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dish 2: Linguine Frutos do Mar & Polvo -->
+            <div class="dish-showcase-card reveal-item reveal-delay-1">
+              <div class="dish-photo-wrap">
+                <img src="images/pratos.jpeg" alt="Linguine de frutos do mar com polvo grelhado e camarões"
+                  class="dish-photo" loading="lazy">
+                <span class="dish-photo-badge">Frutos do Mar</span>
+              </div>
+              <div class="dish-content">
+                <h3 class="dish-name">Linguine Frutos do Mar &amp; Polvo Grelhado</h3>
+                <p class="dish-summary">
+                  Massa artesanal fresca salteada no azeite extravirgem com tentáculos de polvo grelhados no ponto
+                  perfeito, camarões graúdos, anéis de lula, tomates cereja assados e manjericão fresco.
+                </p>
+                <div class="dish-tags">
+                  <span class="tag-pill">Serve 2 pessoas</span>
+                  <span class="tag-pill">Polvo Grelhado</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dish 3: Coquetelaria & Drinks -->
+            <div class="dish-showcase-card reveal-item reveal-delay-2">
+              <div class="dish-photo-wrap dish-photo-wrap--drink">
+                <img src="images/foto drinks.jpeg" alt="Drink Piña Colada na taça com flor de limão de frente para o mar"
+                  class="dish-photo dish-photo--drink" loading="lazy">
+                <span class="dish-photo-badge">Coquetelaria Autoral</span>
+              </div>
+              <div class="dish-content">
+                <h3 class="dish-name">Coquetelaria Tropical &amp; Sunset</h3>
+                <p class="dish-summary">
+                  Carta exclusiva de coquetéis refrescantes preparados para harmonizar com a praia: Piña Colada artesanal
+                  com flor cítrica, caipifrutas com frutas regionais (caju, maracujá e cajá) e gins tropicais.
+                </p>
+                <div class="dish-tags">
+                  <span class="tag-pill">Drinks Autorais</span>
+                  <span class="tag-pill">Frutas Frescas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Carousel Navigation Controls -->
+          <div class="carousel-nav" aria-label="Navegação de Pratos">
+            <button class="carousel-btn carousel-btn--prev" aria-label="Prato anterior">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <div class="carousel-indicators">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+            </div>
+            <button class="carousel-btn carousel-btn--next" aria-label="Próximo prato">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gastronomy-callout reveal-item">
+          <div class="callout-text">
+            <h4>Quer conhecer o cardápio completo e as opções do dia?</h4>
+            <p>Nossa equipe envia pelo WhatsApp a carta de petiscos, pratos principais, peixes do dia, pizzas noturnas e
+              bebidas.</p>
+          </div>
+          <a href="https://wa.me/5584986312222?text=Olá!%20Gostaria%20de%20receber%20as%20opções%20do%20cardápio%20do%20Dom%20Aquino."
+            target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <span>Solicitar Opções no WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: SOBREMESAS ARTESANAIS (INSTITUCIONAL) -->
+    <section class="section section-desserts" id="sobremesas">
+      <div class="container">
+        <div class="section-intro text-center reveal-item">
+          <span class="section-kicker">CONFEITARIA DA CASA</span>
+          <h2 class="section-headline">Sobremesas Que Marcam Momentos</h2>
+          <p class="section-subtext">
+            Feitas diariamente na nossa cozinha para finalizar sua refeição com delicadeza e sabor.
+          </p>
+        </div>
+
+        <div class="mobile-carousel" data-carousel>
+          <div class="desserts-showcase-grid mobile-carousel-track">
+            <!-- Sobremesa 1: Cartola -->
+            <div class="dessert-showcase-card reveal-item">
+              <div class="dessert-photo-wrap">
+                <img src="images/sobremesa (2).jpeg"
+                  alt="Cartola Potiguar Dom Aquino com bananas flambadas e queijo de manteiga maçaricado"
+                  class="dessert-photo" loading="lazy">
+              </div>
+              <div class="dessert-info-clean">
+                <h3 class="dessert-name">Cartola Dom Aquino</h3>
+                <p class="dessert-desc">A mais tradicional sobremesa nordestina: bananas maduras flambadas na manteiga de
+                  garrafa com queijo de manteiga maçaricado, canela aromática e sorvete com cereja.</p>
+              </div>
+            </div>
+
+            <!-- Sobremesa 2: Abacaxi Flambado -->
+            <div class="dessert-showcase-card reveal-item reveal-delay-1">
+              <div class="dessert-photo-wrap">
+                <img src="images/sobremesa (4).jpeg" alt="Abacaxi flambado com sorvete e vista para o mar de Ponta Negra"
+                  class="dessert-photo" loading="lazy">
+              </div>
+              <div class="dessert-info-clean">
+                <h3 class="dessert-name">Abacaxi Flambado no Mar</h3>
+                <p class="dessert-desc">Fatia alta de abacaxi caramelizado e maçaricado, servido quente com sorvete
+                  artesanal derretendo e canela de frente para as águas de Ponta Negra.</p>
+              </div>
+            </div>
+
+            <!-- Sobremesa 3: Petit Gateau -->
+            <div class="dessert-showcase-card reveal-item reveal-delay-2">
+              <div class="dessert-photo-wrap">
+                <img src="images/sobremesa (3).jpeg" alt="Petit Gateau artesanal com calda quente de chocolate e sorvete"
+                  class="dessert-photo" loading="lazy">
+              </div>
+              <div class="dessert-info-clean">
+                <h3 class="dessert-name">Petit Gateau Artesanal</h3>
+                <p class="dessert-desc">Bolo quente de chocolate nobre com centro líquido cremoso, acompanhado de sorvete
+                  de baunilha e calda de chocolate suave.</p>
+              </div>
+            </div>
+
+            <!-- Sobremesa 4: Pudim Tradicional -->
+            <div class="dessert-showcase-card reveal-item reveal-delay-3">
+              <div class="dessert-photo-wrap">
+                <img src="images/sobremesa (1).jpeg"
+                  alt="Pudim de leite condensado artesanal com calda de caramelo brilhante" class="dessert-photo"
+                  loading="lazy">
+              </div>
+              <div class="dessert-info-clean">
+                <h3 class="dessert-name">Pudim de Leite Condensado</h3>
+                <p class="dessert-desc">Textura sedosa e delicada, feito com a receita tradicional da casa e coberto com
+                  calda dourada de caramelo brilhante.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Carousel Navigation Controls -->
+          <div class="carousel-nav" aria-label="Navegação de Sobremesas">
+            <button class="carousel-btn carousel-btn--prev" aria-label="Sobremesa anterior">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <div class="carousel-indicators">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+            </div>
+            <button class="carousel-btn carousel-btn--next" aria-label="Próxima sobremesa">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: AVALIAÇÕES REAIS (INSTAGRAM FEEDBACKS) -->
+    <section class="section section-reviews" id="avaliacoes">
+      <div class="container">
+        <div class="section-intro text-center reveal-item">
+          <span class="section-kicker">PROVA SOCIAL &bull; INSTAGRAM</span>
+          <h2 class="section-headline">Aprovado Por Quem Vive a Experiência</h2>
+          <p class="section-subtext">
+            Veja o que clientes e visitantes dizem sobre nossa gastronomia, atendimento e atmosfera nas redes sociais:
+          </p>
+        </div>
+
+        <div class="mobile-carousel" data-carousel>
+          <div class="reviews-feedback-grid mobile-carousel-track">
+            <!-- Feedback Card 1 -->
+            <div class="feedback-card-clean reveal-item">
+              <div class="feedback-img-container">
+                <img src="images/feedbacks.jpeg" alt="Avaliações reais de clientes no Instagram do Dom Aquino"
+                  class="feedback-screen-img" loading="lazy">
+              </div>
+              <div class="feedback-text-content">
+                <div class="stars-row">★★★★★</div>
+                <p class="quote-text">&ldquo;Lugar maravilhoso. Amei o atendimento, as comidas, as músicas, o ambiente
+                  incrível!&rdquo;</p>
+                <span class="client-meta">📸 Comentários reais &bull; @domaquinonatalrn</span>
+              </div>
+            </div>
+
+            <!-- Feedback Card 2 -->
+            <div class="feedback-card-clean reveal-item reveal-delay-1">
+              <div class="feedback-img-container">
+                <img src="images/feedbacks2.jpeg"
+                  alt="Comentários no Instagram destacando o Dom Aquino como melhor lugar de Ponta Negra"
+                  class="feedback-screen-img" loading="lazy">
+              </div>
+              <div class="feedback-text-content">
+                <div class="stars-row">★★★★★</div>
+                <p class="quote-text">&ldquo;Melhor lugar de Ponta Negra! Vale muito a pena, em breve esperamos
+                  voltar.&rdquo;</p>
+                <span class="client-meta">📸 Comentários reais &bull; @domaquinonatalrn</span>
+              </div>
+            </div>
+
+            <!-- Feedback Card 3 -->
+            <div class="feedback-card-clean reveal-item reveal-delay-2">
+              <div class="feedback-img-container">
+                <img src="images/feedbacks 3.jpeg" alt="Avaliações 5 estrelas do Dom Aquino Gastrobar"
+                  class="feedback-screen-img" loading="lazy">
+              </div>
+              <div class="feedback-text-content">
+                <div class="stars-row">★★★★★</div>
+                <p class="quote-text">&ldquo;Eu recomendo, sou fã deste restaurante. Pratos maravilhosos e ótimo
+                  atendimento.&rdquo;</p>
+                <span class="client-meta">📸 Comentários reais &bull; @domaquinonatalrn</span>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Carousel Navigation Controls -->
+          <div class="carousel-nav" aria-label="Navegação de Depoimentos">
+            <button class="carousel-btn carousel-btn--prev" aria-label="Depoimento anterior">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <div class="carousel-indicators">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+            </div>
+            <button class="carousel-btn carousel-btn--next" aria-label="Próximo depoimento">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: INFORMAÇÕES PRÁTICAS & LOCALIZAÇÃO COM MAPA INTERATIVO -->
+    <section class="section section-info" id="informacoes">
+      <div class="container">
+        <div class="section-intro text-center reveal-item">
+          <span class="section-kicker">LOCALIZAÇÃO &bull; MAPA INTERATIVO</span>
+          <h2 class="section-headline">Fácil de Encontrar, Impossível de Esquecer</h2>
+          <p class="section-subtext">
+            Estamos no coração de Ponta Negra, a passos da praia. Navegue no mapa interativo e trace sua rota até o Dom
+            Aquino:
+          </p>
+        </div>
+
+        <!-- Info Pills Grid -->
+        <div class="info-pills-row reveal-item">
+          <div class="info-pill-item">
+            <span class="info-pill-icon">⏰</span>
+            <div>
+              <strong>Horário de Funcionamento</strong>
+              <p>Segunda a Domingo &bull; 11:00 às 23:00 (Ininterrupto)</p>
+            </div>
+          </div>
+
+          <div class="info-pill-item">
+            <span class="info-pill-icon">📍</span>
+            <div>
+              <strong>Endereço em Ponta Negra</strong>
+              <p>Rua Pastor Rodolfo Beuttenmuller, 9045 A &bull; Natal/RN</p>
+            </div>
+          </div>
+
+          <div class="info-pill-item">
+            <span class="info-pill-icon">🏊</span>
+            <div>
+              <strong>Acesso Livre à Piscina</strong>
+              <p>Disponível para clientes que consomem no restaurante</p>
+            </div>
+          </div>
+
+          <div class="info-pill-item">
+            <span class="info-pill-icon">🚗</span>
+            <div>
+              <strong>Acesso &amp; Estacionamento</strong>
+              <p>Fácil acesso de Uber/táxi e vagas na vizinhança</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Map Layout -->
+        <div class="interactive-map-box reveal-item reveal-delay-1">
+          <div class="map-frame-wrapper">
+            <iframe
+              src="https://maps.google.com/maps?q=Rua+Pastor+Rodolfo+Beuttenmuller,+9045+A,+Ponta+Negra,+Natal+-+RN&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              class="google-map-embed" loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa interativo do Dom Aquino Hotel & Gastronomia">
+            </iframe>
+          </div>
+
+          <div class="map-sidebar-card">
+            <div class="map-card-brand">
+              <img src="images/logo.jpeg" alt="Dom Aquino Hotel & Gastronomia" class="map-brand-logo">
+              <div>
+                <h4 class="map-brand-title">Dom Aquino Hotel &amp; Gastronomia</h4>
+                <span class="map-brand-sub">Praia de Ponta Negra &bull; Natal / RN</span>
+              </div>
+            </div>
+
+            <div class="map-details">
+              <p class="map-address-line">
+                <strong>📍 Endereço:</strong><br>
+                Rua Pastor Rodolfo Beuttenmuller, 9045 A<br>
+                Ponta Negra, Natal - RN, CEP 59090-060
+              </p>
+              <p class="map-reference-line">
+                🌊 <em>A poucos passos da areia com vista do Morro do Careca.</em>
+              </p>
+            </div>
+
+            <div class="map-actions-group">
+              <a href="https://maps.google.com/?q=Dom+Aquino+Ponta+Negra+Natal+RN" target="_blank"
+                rel="noopener noreferrer" class="btn btn-primary w-100">
+                <span>📍 Traçar Rota no Google Maps</span>
+              </a>
+              <a href="https://waze.com/ul?q=Dom+Aquino+Gastrobar+Natal" target="_blank" rel="noopener noreferrer"
+                class="btn btn-secondary w-100">
+                <span>🚗 Traçar Rota no Waze</span>
+              </a>
+              <a href="https://wa.me/5584986312222?text=Olá!%20Gostaria%20de%20ajuda%20para%20chegar%20ao%20Dom%20Aquino."
+                target="_blank" rel="noopener noreferrer" class="map-wa-link">
+                💬 Ajuda com localização no WhatsApp &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: RESERVAS & CONTATO (CLEAN FORM / WHATSAPP) -->
+    <section class="section section-contact" id="contato">
+      <div class="container">
+        <div class="contact-box-wrapper reveal-item">
+          <div class="contact-header-clean text-center">
+            <span class="section-kicker">GARANTA SEU MOMENTO</span>
+            <h2 class="section-headline">Planeje Sua Visita ao Dom Aquino</h2>
+            <p class="section-subtext">
+              Para garantir uma mesa com a melhor vista para o mar ou tirar dúvidas sobre o local, preencha abaixo ou
+              fale direto no WhatsApp.
+            </p>
+          </div>
+
+          <form class="clean-contact-form" id="contact-form">
+            <div class="form-grid">
+              <div class="field-wrap">
+                <label for="c-name">Seu Nome</label>
+                <input type="text" id="c-name" class="clean-input" placeholder="Ex: Lucas Silva" required>
+              </div>
+
+              <div class="field-wrap">
+                <label for="c-phone">Seu WhatsApp</label>
+                <input type="tel" id="c-phone" class="clean-input" placeholder="(84) 99999-9999" required>
+              </div>
+
+              <div class="field-wrap">
+                <label for="c-date">Data Desejada</label>
+                <input type="date" id="c-date" class="clean-input" required>
+              </div>
+
+              <div class="field-wrap">
+                <label for="c-time">Horário Previsto</label>
+                <select id="c-time" class="clean-input" required>
+                  <option value="" disabled selected>Selecione um horário</option>
+                  <option value="11:30">11:30 - Almoço de Praia</option>
+                  <option value="13:00">13:00 - Almoço / Tarde</option>
+                  <option value="15:00">15:00 - Tarde &amp; Piscina</option>
+                  <option value="16:30">16:30 - Sunset &amp; Pôr do Sol</option>
+                  <option value="19:00">19:00 - Jantar Inicial</option>
+                  <option value="20:30">20:30 - Jantar à Beira-Mar</option>
+                </select>
+              </div>
+
+              <div class="field-wrap full-width">
+                <label for="c-people">Número de Pessoas</label>
+                <select id="c-people" class="clean-input" required>
+                  <option value="2 pessoas">2 Pessoas (Casal)</option>
+                  <option value="3 a 4 pessoas" selected>3 a 4 Pessoas</option>
+                  <option value="5 a 8 pessoas">5 a 8 Pessoas</option>
+                  <option value="Mais de 8 pessoas (Grupo/Evento)">Mais de 8 Pessoas (Grupo ou Evento)</option>
+                </select>
+              </div>
+
+              <div class="field-wrap full-width">
+                <label for="c-obs">Mensagem ou Ocasião Especial (Opcional)</label>
+                <input type="text" id="c-obs" class="clean-input"
+                  placeholder="Ex: Aniversário, mesa próxima à piscina, etc.">
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg w-100">
+              <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+              </svg>
+              <span>Confirmar Informações no WhatsApp Agora</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CLEAN MINIMALIST FOOTER -->
+  <footer class="site-footer-clean">
+    <div class="container footer-clean-grid">
+      <div class="footer-brand-col">
+        <div class="brand">
+          <img src="images/logo.jpeg" alt="Dom Aquino Hotel & Gastronomia" class="brand-logo-img">
+          <div class="brand-text">
+            <span class="brand-title">DOM AQUINO</span>
+            <span class="brand-subtitle">HOTEL &bull; GASTRONOMIA</span>
+          </div>
+        </div>
+        <p class="footer-clean-desc">
+          Restaurante, hotel e espaço de lazer à beira-mar da Praia de Ponta Negra em Natal/RN. Culinária potiguar
+          autoral, piscina para clientes e vista panorâmica para o Morro do Careca.
+        </p>
+        <div class="footer-social-link">
+          <a href="https://www.instagram.com/domaquinonatalrn/" target="_blank" rel="noopener noreferrer">
+            📸 Siga no Instagram: <strong>@domaquinonatalrn</strong>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4 class="footer-title">Navegação</h4>
+        <ul class="footer-list">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#o-local">O Local &amp; Conceito</a></li>
+          <li><a href="#estrutura">Estrutura &amp; Lazer</a></li>
+          <li><a href="#gastronomia">Gastronomia</a></li>
+          <li><a href="#sobremesas">Sobremesas</a></li>
+          <li><a href="#informacoes">Horários &amp; Como Chegar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h4 class="footer-title">Atendimento &amp; Endereço</h4>
+        <p class="footer-contact-text">
+          <strong>Horário:</strong> Todos os dias, 11h às 23h<br>
+          <strong>Endereço:</strong> Rua Pastor Rodolfo Beuttenmuller, 9045 A &bull; Ponta Negra, Natal - RN
+        </p>
+        <a href="https://wa.me/5584986312222?text=Olá!%20Gostaria%20de%20fazer%20uma%20reserva." target="_blank"
+          rel="noopener noreferrer" class="btn btn-outline-orange btn-sm mt-10">
+          <span>💬 WhatsApp: (84) 98631-2222</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer-clean-bottom">
+      <p>&copy; 2026 Dom Aquino Hotel &amp; Gastronomia. Todos os direitos reservados. Ponta Negra, Natal - RN.</p>
+      <p class="footer-credits">Site Institucional Informativo &bull; Ponta Negra</p>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON (ORANGE & WHITE) -->
+  <div class="floating-whatsapp-wrap">
+    <a href="https://wa.me/5584986312222?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20informações%20sobre%20o%20Dom%20Aquino."
+      target="_blank" rel="noopener noreferrer" class="floating-btn-orange" aria-label="Falar conosco no WhatsApp">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+        <path
+          d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+      </svg>
+    </a>
+  </div>
+
+  <!-- FULLSCREEN IMAGE LIGHTBOX MODAL (ZOOM ELEGANTE) -->
+  <div id="image-lightbox" class="image-lightbox" aria-hidden="true" role="dialog" aria-label="Visualizador de Imagem">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Fechar">&times;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Imagem ampliada do Dom Aquino">
+      <div class="lightbox-footer">
+        <p id="lightbox-caption" class="lightbox-caption"></p>
+        <span class="lightbox-hint">Toque fora ou no X para fechar</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js?v=20260923v7"></script>
+</body>
+
+</html>
