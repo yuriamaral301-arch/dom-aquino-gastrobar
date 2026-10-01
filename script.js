@@ -1,5 +1,5 @@
 /**
- * DOM AQUINO HOTEL & GASTRONOMIA - INTERACTION LOGIC
+ * DOM AQUINO RESTAURANTE - INTERACTION LOGIC
  * Minimalist & Clean Institutional Landing Page
  */
 
@@ -109,18 +109,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const dateBR = formatDateBR(date);
 
-      let msg = `Olá! Gostaria de informações / pré-reserva no *Dom Aquino Hotel & Gastronomia*:\n\n`;
-      msg += `👤 *Nome:* ${name}\n`;
-      msg += `📱 *WhatsApp:* ${phone}\n`;
-      msg += `📅 *Data:* ${dateBR}\n`;
-      msg += `⏰ *Horário:* ${time}\n`;
-      msg += `👥 *Pessoas:* ${people}\n`;
-
-      if (obs) {
-        msg += `📝 *Observação:* ${obs}\n`;
+      const curLang = localStorage.getItem('dom_aquino_lang') || document.documentElement.lang || 'pt';
+      let msg = `Olá! Gostaria de informações / pré-reserva no *Dom Aquino Restaurante*:\n\n`;
+      if (curLang === 'en') {
+        msg = `Hello! I would like information / reservation at *Dom Aquino Restaurante*:\n\n`;
+        msg += `👤 *Name:* ${name}\n`;
+        msg += `📱 *WhatsApp:* ${phone}\n`;
+        msg += `📅 *Date:* ${dateBR}\n`;
+        msg += `⏰ *Time:* ${time}\n`;
+        msg += `👥 *Guests:* ${people}\n`;
+        if (obs) msg += `📝 *Notes:* ${obs}\n`;
+        msg += `\nI contacted you via the website and await confirmation. Thank you!`;
+      } else if (curLang === 'es') {
+        msg = `¡Hola! Me gustaría información / reserva en *Dom Aquino Restaurante*:\n\n`;
+        msg += `👤 *Nombre:* ${name}\n`;
+        msg += `📱 *WhatsApp:* ${phone}\n`;
+        msg += `📅 *Fecha:* ${dateBR}\n`;
+        msg += `⏰ *Hora:* ${time}\n`;
+        msg += `👥 *Personas:* ${people}\n`;
+        if (obs) msg += `📝 *Observaciones:* ${obs}\n`;
+        msg += `\nLlegué a través del sitio web y espero su confirmación. ¡Muchas gracias!`;
+      } else {
+        msg += `👤 *Nome:* ${name}\n`;
+        msg += `📱 *WhatsApp:* ${phone}\n`;
+        msg += `📅 *Data:* ${dateBR}\n`;
+        msg += `⏰ *Horário:* ${time}\n`;
+        msg += `👥 *Pessoas:* ${people}\n`;
+        if (obs) msg += `📝 *Observação:* ${obs}\n`;
+        msg += `\nVim pelo site institucional e aguardo confirmação da equipe. Obrigado!`;
       }
-
-      msg += `\nVim pelo site institucional e aguardo confirmação da equipe. Obrigado!`;
 
       const encodedMsg = encodeURIComponent(msg);
       const waUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${encodedMsg}`;
@@ -192,13 +209,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Attach click listener to all image containers
-  const zoomableWrappers = document.querySelectorAll('.card-visual, .dish-photo-wrap, .dessert-photo-wrap, .feedback-img-container, .hero-image-card');
+  const zoomableWrappers = document.querySelectorAll('.card-visual, .dish-photo-wrap, .dessert-photo-wrap, .feedback-img-container, .hero-image-card, .pb-visual-card');
   zoomableWrappers.forEach(wrapper => {
     wrapper.addEventListener('click', () => {
       const img = wrapper.querySelector('img');
       if (img && img.getAttribute('src')) {
         const titleEl = wrapper.closest('.dish-showcase-card, .clean-card, .dessert-showcase-card, .feedback-card-clean')?.querySelector('h3, .dish-name, .clean-card-title, .dessert-name, .quote-text');
-        const caption = titleEl ? titleEl.textContent.trim() : (img.getAttribute('alt') || 'Dom Aquino Hotel & Gastronomia');
+        const caption = titleEl ? titleEl.textContent.trim() : (img.getAttribute('alt') || 'Dom Aquino Restaurante');
         openLightbox(img.getAttribute('src'), caption);
       }
     });
@@ -290,12 +307,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const track = carousel.querySelector('.mobile-carousel-track');
     const prevBtn = carousel.querySelector('.carousel-btn--prev');
     const nextBtn = carousel.querySelector('.carousel-btn--next');
-    const dots = carousel.querySelectorAll('.carousel-dot');
+    const dotsContainer = carousel.querySelector('.carousel-indicators');
     if (!track) return;
 
     const cards = Array.from(track.children);
     const total = cards.length;
     if (total <= 1) return;
+
+    if (dotsContainer) {
+      dotsContainer.innerHTML = '';
+      cards.forEach((_, idx) => {
+        const dot = document.createElement('span');
+        dot.className = 'carousel-dot' + (idx === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', `Slide ${idx + 1}`);
+        dot.addEventListener('click', (e) => {
+          e.preventDefault();
+          scrollToCard(idx);
+        });
+        dotsContainer.appendChild(dot);
+      });
+    }
+
+    const dots = dotsContainer ? dotsContainer.querySelectorAll('.carousel-dot') : [];
 
     const getActiveIndex = () => {
       const trackCenter = track.scrollLeft + track.offsetWidth / 2;
@@ -379,6 +412,34 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial check
     updateUI();
   });
+
+  // --- 11. GASTRONOMY DISH CATEGORY FILTERS ---
+  const filterButtons = document.querySelectorAll('.dish-filter-btn');
+  const dishCards = document.querySelectorAll('.dishes-showcase-grid .dish-showcase-card');
+  const dishesTrack = document.querySelector('.section-gastronomy .mobile-carousel-track');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+
+      dishCards.forEach(card => {
+        const cat = card.getAttribute('data-category') || '';
+        if (filter === 'all' || cat.split(' ').includes(filter)) {
+          card.classList.remove('is-hidden');
+        } else {
+          card.classList.add('is-hidden');
+        }
+      });
+
+      if (dishesTrack) {
+        dishesTrack.scrollTo({ left: 0, behavior: 'smooth' });
+      }
+    });
+  });
 });
+
 
 

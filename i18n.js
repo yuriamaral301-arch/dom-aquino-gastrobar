@@ -95,7 +95,7 @@ const GASTRO_TRANSLATIONS = {
     dish2_tag1: 'Entrada Premium',
     dish2_tag2: 'Receita Exclusiva',
 
-    dish3_badge: 'Almoço Inesquecível',
+    dish3_badge: 'Almoço &amp; Jantar Inesquecíveis',
     dish3_name: 'Pão Italiano com Frutos do Mar',
     dish3_desc: 'Pão rústico italiano artesanal recheado com gratinado cremoso de camarões graúdos e frutos do mar frescos, finalizado com queijo dourado maçaricado.',
     dish3_tag1: 'Serve 2 pessoas',
@@ -329,7 +329,7 @@ const GASTRO_TRANSLATIONS = {
     dish2_tag1: 'Premium Starter',
     dish2_tag2: 'Exclusive Recipe',
 
-    dish3_badge: 'Unforgettable Lunch',
+    dish3_badge: 'Unforgettable Lunch &amp; Dinner',
     dish3_name: 'Seafood Gratin Italian Bread Bowl',
     dish3_desc: 'Rustic artisan bread bowl filled with a creamy, bubbling gratin of jumbo shrimp and fresh seafood, topped with golden broiled cheese.',
     dish3_tag1: 'Serves 2 people',
@@ -562,7 +562,7 @@ const GASTRO_TRANSLATIONS = {
     dish2_tag1: 'Entrada Premium',
     dish2_tag2: 'Receta Exclusiva',
 
-    dish3_badge: 'Almuerzo Inolvidable',
+    dish3_badge: 'Almuerzo y Cena Inolvidables',
     dish3_name: 'Pan Italiano Gratinado de Mariscos',
     dish3_desc: 'Pan de campo italiano relleno con un cremoso gratinado de camarones y mariscos frescos, coronado con queso dorado al soplete.',
     dish3_tag1: 'Para 2 personas',
