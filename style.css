@@ -3225,3 +3225,144 @@ ul {
   color: var(--color-text-muted);
   line-height: 1.4;
 }
+
+/* --- CONEXÃO COM O HOTEL DOM AQUINO --- */
+.nav-item-hotel {
+  background: var(--color-orange-light);
+  border: 1px solid var(--color-orange-border);
+  color: var(--color-orange) !important;
+  font-weight: 700 !important;
+  padding: 6px 14px !important;
+  border-radius: var(--radius-full);
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+  transition: all var(--transition-normal);
+  box-shadow: 0 2px 8px rgba(240, 90, 36, 0.12);
+}
+
+.nav-item-hotel:hover {
+  background: var(--color-orange);
+  color: #ffffff !important;
+  border-color: var(--color-orange);
+  box-shadow: 0 4px 14px rgba(240, 90, 36, 0.28);
+  transform: translateY(-1px);
+}
+
+.nav-item-hotel::after {
+  display: none !important;
+}
+
+.top-hotel-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-orange);
+  font-weight: 700;
+  background: rgba(240, 90, 36, 0.1);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+}
+
+.top-hotel-link:hover {
+  background: var(--color-orange);
+  color: #ffffff !important;
+}
+
+.drawer-nav-hotel {
+  background: var(--color-orange-light);
+  border: 1.5px solid var(--color-orange-border);
+  border-radius: var(--radius-md);
+  padding: 10px 14px !important;
+  color: var(--color-orange) !important;
+  font-weight: 700 !important;
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+  transition: all var(--transition-fast);
+}
+
+.drawer-nav-hotel:hover {
+  background: var(--color-orange);
+  color: #ffffff !important;
+}
+
+.hotel-link-section {
+  background: linear-gradient(135deg, #182232 0%, #0d1624 100%);
+  padding: 56px 0;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hotel-link-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 85% 50%, rgba(240, 90, 36, 0.2), transparent 55%);
+  pointer-events: none;
+}
+
+.hotel-link-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.hotel-link-text {
+  max-width: 640px;
+}
+
+.hotel-link-kicker {
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-orange);
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.hotel-link-text h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+
+.hotel-link-text p {
+  font-size: 0.98rem;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.65;
+}
+
+.btn-white-hotel {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  color: var(--color-orange) !important;
+  font-weight: 800;
+  font-size: 0.95rem;
+  padding: 14px 28px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.btn-white-hotel:hover {
+  background-color: var(--color-orange);
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-orange-hover);
+}

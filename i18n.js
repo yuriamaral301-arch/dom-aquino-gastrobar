@@ -16,9 +16,12 @@ const GASTRO_TRANSLATIONS = {
     nav_info: 'Informações',
     nav_contact: 'Contato',
     nav_whatsapp: 'Fale no WhatsApp',
+    nav_hotel: '🏨 Conheça Nosso Hotel',
+    top_hotel_link: '🏨 Conheça Nosso Hotel',
     
     // Drawer
     drawer_home: 'Início',
+    drawer_hotel: '🏨 Conheça Nosso Hotel &amp; Hospedagem',
     drawer_local: 'Restaurante &amp; Pizzaria',
     drawer_structure: 'Estrutura &amp; Vista para o Mar',
     drawer_gastronomy: 'Nossa Gastronomia',
@@ -264,7 +267,14 @@ const GASTRO_TRANSLATIONS = {
     footer_wa_btn: '💬 WhatsApp: (84) 98631-2222',
     footer_rights: '&copy; 2026 Dom Aquino Restaurante e Pizzaria. Todos os direitos reservados. Ponta Negra, Natal - RN.',
     footer_credits: 'Site Institucional Informativo &bull; Ponta Negra',
+    footer_hotel: 'Dom Aquino Hotel &amp; Hospedagem 🏨',
     lightbox_hint: 'Toque fora ou no X para fechar',
+
+    // Hotel Connection Banner
+    hotel_kicker: 'HOSPEDAGEM BEIRA-MAR',
+    hotel_sec_title: 'Conheça também o Dom Aquino Hotel 🏨',
+    hotel_sec_desc: 'Ao lado do restaurante e de frente para o Morro do Careca: quartos confortáveis com ar-condicionado, café da manhã farto incluso, estacionamento e recepção 24h em Ponta Negra.',
+    hotel_sec_btn: 'Conhecer o Hotel →',
 
     // Pre-filled WhatsApp message
     wa_default_msg: 'Olá! Vim pelo site do Dom Aquino Restaurante e Pizzaria e gostaria de informações.'
@@ -282,9 +292,12 @@ const GASTRO_TRANSLATIONS = {
     nav_info: 'Information',
     nav_contact: 'Contact',
     nav_whatsapp: 'Chat on WhatsApp',
+    nav_hotel: '🏨 Discover Our Hotel',
+    top_hotel_link: '🏨 Discover Our Hotel',
     
     // Drawer
     drawer_home: 'Home',
+    drawer_hotel: '🏨 Discover Our Hotel &amp; Lodging',
     drawer_local: 'Restaurant &amp; Pizzeria',
     drawer_structure: 'Structure &amp; Ocean View',
     drawer_gastronomy: 'Our Gastronomy',
@@ -530,7 +543,14 @@ const GASTRO_TRANSLATIONS = {
     footer_wa_btn: '💬 WhatsApp: (84) 98631-2222',
     footer_rights: '&copy; 2026 Dom Aquino Restaurante e Pizzaria. All rights reserved. Ponta Negra, Natal - RN.',
     footer_credits: 'Official Institutional Website &bull; Ponta Negra',
+    footer_hotel: 'Dom Aquino Hotel &amp; Lodging 🏨',
     lightbox_hint: 'Tap outside or press X to close',
+
+    // Hotel Connection Banner
+    hotel_kicker: 'OCEANFRONT LODGING',
+    hotel_sec_title: 'Discover Dom Aquino Hotel 🏨',
+    hotel_sec_desc: 'Right next to the restaurant facing Morro do Careca: comfortable air-conditioned rooms, hearty breakfast included, free parking, and 24/7 reception in Ponta Negra.',
+    hotel_sec_btn: 'Explore Our Hotel →',
 
     // Pre-filled WhatsApp message
     wa_default_msg: 'Hello! I visited the Dom Aquino Restaurante e Pizzaria website and would like information/to make a reservation.'
@@ -548,9 +568,12 @@ const GASTRO_TRANSLATIONS = {
     nav_info: 'Información',
     nav_contact: 'Contacto',
     nav_whatsapp: 'Hablar en WhatsApp',
+    nav_hotel: '🏨 Conozca Nuestro Hotel',
+    top_hotel_link: '🏨 Conozca Nuestro Hotel',
     
     // Drawer
     drawer_home: 'Inicio',
+    drawer_hotel: '🏨 Conozca Nuestro Hotel y Alojamiento',
     drawer_local: 'Restaurante y Pizzería',
     drawer_structure: 'Estructura y Vista al Mar',
     drawer_gastronomy: 'Nuestra Gastronomía',
@@ -795,7 +818,14 @@ const GASTRO_TRANSLATIONS = {
     footer_wa_btn: '💬 WhatsApp: (84) 98631-2222',
     footer_rights: '&copy; 2026 Dom Aquino Restaurante e Pizzaria. Todos os direitos reservados. Ponta Negra, Natal - RN.',
     footer_credits: 'Sitio Institucional Oficial &bull; Ponta Negra',
+    footer_hotel: 'Dom Aquino Hotel &amp; Hospedaje 🏨',
     lightbox_hint: 'Toque afuera o en la X para cerrar',
+
+    // Hotel Connection Banner
+    hotel_kicker: 'ALOJAMIENTO FRENTE AL MAR',
+    hotel_sec_title: 'Conozca también Dom Aquino Hotel 🏨',
+    hotel_sec_desc: 'Al lado del restaurante frente al Morro do Careca: cómodas habitaciones climatizadas, desayuno buffet abundante incluido, estacionamiento y recepción 24 horas en Ponta Negra.',
+    hotel_sec_btn: 'Conocer el Hotel →',
 
     // Pre-filled WhatsApp message
     wa_default_msg: '¡Hola! Vi el sitio web de Dom Aquino Restaurante e Pizzaria y me gustaría obtener información / hacer una reserva.'
