@@ -1,5 +1,5 @@
 /**
- * DOM AQUINO RESTAURANTE - INTERACTION LOGIC
+ * DOM AQUINO RESTAURANTE E PIZZARIA - INTERACTION LOGIC
  * Minimalist & Clean Institutional Landing Page
  */
 
@@ -110,9 +110,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const dateBR = formatDateBR(date);
 
       const curLang = localStorage.getItem('dom_aquino_lang') || document.documentElement.lang || 'pt';
-      let msg = `Olá! Gostaria de informações / pré-reserva no *Dom Aquino Restaurante*:\n\n`;
+      let msg = `Olá! Gostaria de informações / pré-reserva no *Dom Aquino Restaurante e Pizzaria*:\n\n`;
       if (curLang === 'en') {
-        msg = `Hello! I would like information / reservation at *Dom Aquino Restaurante*:\n\n`;
+        msg = `Hello! I would like information / reservation at *Dom Aquino Restaurante e Pizzaria*:\n\n`;
         msg += `👤 *Name:* ${name}\n`;
         msg += `📱 *WhatsApp:* ${phone}\n`;
         msg += `📅 *Date:* ${dateBR}\n`;
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (obs) msg += `📝 *Notes:* ${obs}\n`;
         msg += `\nI contacted you via the website and await confirmation. Thank you!`;
       } else if (curLang === 'es') {
-        msg = `¡Hola! Me gustaría información / reserva en *Dom Aquino Restaurante*:\n\n`;
+        msg = `¡Hola! Me gustaría información / reserva en *Dom Aquino Restaurante e Pizzaria*:\n\n`;
         msg += `👤 *Nombre:* ${name}\n`;
         msg += `📱 *WhatsApp:* ${phone}\n`;
         msg += `📅 *Fecha:* ${dateBR}\n`;
@@ -177,9 +177,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const openLightbox = (src, altText) => {
     if (!lightbox || !lightboxImg) return;
     lightboxImg.src = src;
-    lightboxImg.alt = altText || 'Dom Aquino Gastronomia';
+    lightboxImg.alt = altText || 'Dom Aquino Restaurante e Pizzaria';
     if (lightboxCaption) {
-      lightboxCaption.textContent = altText || 'Dom Aquino Ponta Negra';
+      lightboxCaption.textContent = altText || 'Dom Aquino Restaurante e Pizzaria - Ponta Negra';
     }
     lightbox.classList.add('active');
     lightbox.setAttribute('aria-hidden', 'false');
@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const img = wrapper.querySelector('img');
       if (img && img.getAttribute('src')) {
         const titleEl = wrapper.closest('.dish-showcase-card, .clean-card, .dessert-showcase-card, .feedback-card-clean')?.querySelector('h3, .dish-name, .clean-card-title, .dessert-name, .quote-text');
-        const caption = titleEl ? titleEl.textContent.trim() : (img.getAttribute('alt') || 'Dom Aquino Restaurante');
+        const caption = titleEl ? titleEl.textContent.trim() : (img.getAttribute('alt') || 'Dom Aquino Restaurante e Pizzaria');
         openLightbox(img.getAttribute('src'), caption);
       }
     });

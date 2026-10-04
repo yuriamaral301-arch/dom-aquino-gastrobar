@@ -1,5 +1,5 @@
 /* ==========================================================================
-   DOM AQUINO HOTEL & GASTRONOMIA - DESIGN SYSTEM & STYLESHEET
+   DOM AQUINO RESTAURANTE E PIZZARIA - DESIGN SYSTEM & STYLESHEET
    Estilo: Minimalista, Clean, Luminoso & Institucional
    Cores: Branco Puro + Laranja da Logo (#F05A24) + Grafite (#18181B)
    ========================================================================== */
@@ -1270,8 +1270,23 @@ ul {
 
 .pb-banner-visuals {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
+}
+
+@media (max-width: 991px) {
+  .pb-banner-visuals {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pb-banner-visuals {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
 }
 
 .pb-visual-card {
@@ -1306,21 +1321,22 @@ ul {
 
 .pb-visual-card .pb-visual-label {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
-  background-color: rgba(15, 23, 42, 0.88);
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  background-color: rgba(15, 23, 42, 0.9);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   color: #ffffff;
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  padding: 6px 10px;
+  padding: 6px 8px;
   border-radius: var(--radius-sm);
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   pointer-events: none;
+  line-height: 1.25;
 }
 
 .pb-visual-card::after {
@@ -2997,4 +3013,215 @@ ul {
   border-color: var(--color-orange);
   color: #ffffff !important;
   box-shadow: 0 4px 12px rgba(240, 90, 36, 0.35);
+}
+
+/* --- Founder Story Card (Sobre Nós) --- */
+.founder-story-card {
+  margin-top: 32px;
+  padding: 28px 24px;
+  background: linear-gradient(135deg, rgba(255, 245, 238, 0.9) 0%, #ffffff 100%);
+  border: 1.5px solid var(--color-orange-border);
+  border-left: 5px solid var(--color-orange);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 30px rgba(240, 90, 36, 0.08);
+}
+
+.founder-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(240, 90, 36, 0.12);
+  border: 1px solid var(--color-orange-border);
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--color-orange);
+  margin-bottom: 12px;
+}
+
+.founder-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-text-title);
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.founder-text {
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: var(--color-text-body);
+  margin-bottom: 18px;
+}
+
+.founder-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.founder-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--color-text-title);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* --- Entradas Rápidas Block --- */
+.entradas-rapidas-block {
+  margin-top: 48px;
+  margin-bottom: 32px;
+  background: #ffffff;
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 36px 32px;
+  box-shadow: var(--shadow-md);
+}
+
+.entradas-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 32px auto;
+}
+
+.entradas-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background: var(--color-orange-subtle);
+  border: 1px solid var(--color-orange-border);
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--color-orange);
+  margin-bottom: 12px;
+}
+
+.entradas-title {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  color: var(--color-text-title);
+  margin-bottom: 10px;
+}
+
+.entradas-sub {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+.entradas-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .entradas-grid {
+    grid-template-columns: 360px 1fr;
+    gap: 36px;
+  }
+}
+
+.entradas-featured-photo {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.entradas-featured-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.entradas-featured-photo:hover img {
+  transform: scale(1.03);
+}
+
+.entradas-photo-tag {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  padding: 10px 14px;
+  background: rgba(12, 24, 37, 0.88);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-md);
+  color: #ffffff;
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.entradas-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+@media (min-width: 640px) {
+  .entradas-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.entrada-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 18px;
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  transition: all 0.25s ease;
+}
+
+.entrada-item:hover {
+  background: #ffffff;
+  border-color: var(--color-orange-border);
+  box-shadow: 0 4px 16px rgba(240, 90, 36, 0.1);
+  transform: translateY(-2px);
+}
+
+.entrada-item.destaque {
+  background: var(--color-orange-light);
+  border-color: var(--color-orange-border);
+}
+
+.entrada-bullet {
+  font-size: 1.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.entrada-name {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text-title);
+  margin-bottom: 4px;
+}
+
+.entrada-desc {
+  display: block;
+  font-size: 0.84rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
 }
